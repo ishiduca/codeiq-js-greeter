@@ -15,7 +15,7 @@
     }
 
     Greeter.prototype.timeZoneOffset = -540// (new Date).getTimezoneOffset()
-	Greeter.prototype.greet = function () {
+    Greeter.prototype.greet = function () {
         var now = new Date
         var jst = this.utcConvertJST(now.getUTCMinutes() + now.getUTCHours() * 60)
         return this.greets[this.getGreetsIndex(jst)]
@@ -80,11 +80,11 @@
         if (lang) return lang
 
         return 'ja'
-    }
 
-    function isRegistered (locale) {
-        if (! Greeeter.greets[locale])
-            throw new TypeError('Greeeter is not supported this locale - "' + locale + '"')
+        function isRegistered (locale) {
+            if (! Greeeter.greets[locale]) throw new TypeError(
+              'Greeeter is not supported this locale - "' + locale + '"')
+        }
     }
 
 
