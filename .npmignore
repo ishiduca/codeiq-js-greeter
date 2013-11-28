@@ -1,0 +1,5 @@
+.git*
+node_modules/
+package.yml
+run-phantom.js
+test.sh
