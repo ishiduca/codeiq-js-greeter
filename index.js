@@ -15,7 +15,7 @@
     }
 
     Greeter.prototype.timeZoneOffset = -540// (new Date).getTimezoneOffset()
-    Greeter.prototype.greets =    Greeter.prototype.greet = function () {
+	Greeter.prototype.greet = function () {
         var now = new Date
         var jst = this.utcConvertJST(now.getUTCMinutes() + now.getUTCHours() * 60)
         return this.greets[this.getGreetsIndex(jst)]

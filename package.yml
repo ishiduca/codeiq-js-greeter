@@ -1,9 +1,12 @@
-name: greeter
+---
 author: ishiduca@gmail.com
-main: ./
-version: 0.0.0
-description: 
-license: MIT
+description: ~
 devDependencies:
-  qunitjs: "1.10.0"
-  qunit-tap: ~1.4.x
+  qunit-tap: '~1.4.x'
+  qunitjs: 1.10.0
+license: MIT
+main: ./
+name: greeter
+scripts:
+  test: prove -e node --ext .js -v
+version: 0.0.0
